@@ -1,19 +1,22 @@
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Flexbox layout demo</title>
+<head>
+  <meta charset="utf-8">
+  <title>Flexbox layout demo</title>
 
-    <!-- No Bootstrap! -->
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+  <!-- No Bootstrap! -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <!-- Navbar -->
-    <div class="navbar-lewagon">
-      <img src="images/logo.png" alt="logo">
-    </div>
+  <!-- Navbar -->
+  <div class="navbar-lewagon">
+    <img src="images/logo.png" alt="logo">
+  </div>
 
-    <!-- Cards -->
+  <!-- Flex container to place cards and map next to eachother -->
+  <div class="main-container">
+    
+    <!-- Cards (grid css) -->
     <div class="cards">
       <div class="card" style="background-image: url(http://kitt.lewagon.com/placeholder/cities/rio)">
         Rio
@@ -96,8 +99,10 @@
       </div>
     </div>
 
+    <!-- Map -->
     <!-- Change the token below (https://www.mapbox.com/account/access-tokens/) -->
     <img id="map" src='https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/2.346,48.8595,11.72,0,0/600x1000?access_token=YOUR_TOKEN_HERE'>
 
-  </body>
+  </div>
+</body>
 </html>
